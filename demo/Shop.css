@@ -1,0 +1,247 @@
+/* Shop.css */
+
+/* General Container Styles */
+.phoneWrapper {
+  width: 360px;
+  height: 640px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.phonePadding {
+  padding-top: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Header Styling */
+.shop-header {
+  background-color: #0071ce; /* Matching the header color from Home.js */
+  color: white;
+  padding: 10px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatarImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.greeting {
+  color: white; /* White text color to match Home.js header */
+}
+
+.greeting h1 {
+  margin: 0;
+  font-size: 22px;
+  color: white; /* White text color */
+}
+
+.cart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.cartImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 150%;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.7em;
+}
+
+/* Autocomplete TextField Styling */
+.MuiAutocomplete-root {
+  width: 100%;
+}
+
+.MuiTextField-root {
+  margin: 20px auto;
+  background-color: #ffffff; /* White background for input */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 4px;
+}
+
+.MuiInputLabel-root {
+  color: #666; /* Gray label color */
+}
+
+.MuiInputBase-input {
+  color: #333; /* Dark text color for input */
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #cccccc; /* Light border color */
+}
+
+.MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #0071ce; /* Blue border when focused */
+}
+
+/* Main Content Styling */
+.shop-content {
+  margin-top: 20px;
+}
+
+/* Product List Styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  padding: 0 10px; /* Ensure padding to handle edge alignment */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Product Item Styling */
+.product-item {
+  background-color: #ffffff; /* White background for product cards */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(50% - 20px); /* Adjust width to fit two items per row, accounting for gap */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth transform transition */
+}
+
+.product-item:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-info h2 {
+  font-size: 16px; /* Adjust font size for product name */
+  margin: 10px 0 5px;
+}
+
+.product-info p {
+  font-size: 14px; /* Adjust font size for product price */
+  margin: 5px 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  background-color: #0071ce;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.quantity-controls span {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.add-to-cart {
+  background-color: #0071ce; /* Primary button color */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 10px;
+  padding: 9px 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.placeholder-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Style for the placeholder image */
+.placeholder-image {
+  width: 400px; /* Adjust the width to your preference */
+  height: 200px;     /* Maintain aspect ratio */
+}
+
+.ingredients-button {
+  background-color: #007bff; /* Button background color */
+  color: white;             /* Text color */
+  border: none;             /* Remove border */
+  border-radius: 15px;       /* Rounded corners */
+  padding: 10px 20px;       /* Button padding */
+  margin-top: 15px;         /* Space between image and button */
+  cursor: pointer; 
+  width:300px;         /* Pointer cursor on hover */
+}
+.recipe-content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for recipe title */
+.recipe-content h2 {
+  margin-bottom: 20px;
+}
+
+/* Style for recipe paragraphs */
+.recipe-content p {
+  margin-bottom: 10px;
+}
+
+/* Style for back button */
+.back-button {
+  background-color: #007bff; /* Button background color */
+  color: white;             /* Text color */
+  border: none;             /* Remove border */
+  border-radius: 15px;       /* Rounded corners */
+  padding: 10px 20px;       /* Button padding */
+  margin-top: 20px;         /* Space between content and button */
+  cursor: pointer;          /* Pointer cursor on hover */
+}
+
+
+
+
+
+
+
+
+
