@@ -1,0 +1,143 @@
+/* Full-page container with a black background */
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The phone rectangle with a white background */
+.phone {
+  width: 360px;
+  height: 640px;
+  background-color: #fff; /* White background for the phone */
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Centered login form inside the phone */
+.login-container {
+  width: 90%; /* Adjusted width to fit better within the phone screen */
+  max-width: 280px; /* Ensure it doesn’t exceed the phone screen */
+  padding: 25px;
+  background-color: #fff; /* Slightly off-white background to blend with phone */
+  border-radius: 15px; /* Rounded corners for better integration */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Walmart logo styling */
+.logo {
+  max-width: 120px;
+  margin-bottom: 20px; /* Reduced margin to fit better */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  align-self: center; /* Center logo */
+}
+
+/* Sign-in heading styling */
+h2 {
+  margin-bottom: 15px; /* Reduced margin for better fit */
+  color: #0071CE;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-self: center; /* Center heading */
+}
+
+/* Styling for input fields */
+.input-group {
+  margin-bottom: 15px; /* Reduced margin for better fit */
+  text-align: left;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px; /* Reduced margin for consistency */
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ddd; /* Slightly lighter border color */
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #0071CE;
+  outline: none;
+}
+
+/* Sign-in button styling */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0071CE;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Sign-up link styling */
+.signup-link {
+  margin-top: 20px; /* Space above the link */
+  color: #0071CE;
+  font-size: 0.9rem;
+  text-align: center; /* Center text */
+  width: 100%; /* Full width for centering */
+}
+
+.signup-link a {
+  color: #0071CE;
+  text-decoration: none;
+  display: inline-block; /* Ensure the link is inline-block for better alignment */
+  margin-top: 5px; /* Margin to separate from the text above */
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+/* Fade transition classes */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

@@ -1,0 +1,190 @@
+.phoneWrapper {
+  width: 360px;
+  height: 640px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.phonePadding {
+  padding-top: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.header {
+  background-color: #0071ce;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatarImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.cartImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 150%;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.7em;
+}
+
+.searchSection {
+  padding: 10px;
+}
+
+.searchBar {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.searchButton {
+  padding: 8px;
+  background-color: #0071ce;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: white;
+}
+
+.locationButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.locationButton {
+  padding: 8px;
+  background-color: #168ff2;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+.quickBuySection {
+  position: relative;
+  margin: 10px 0;
+}
+
+.quickBuyImage {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-radius: 10px;
+}
+
+.quickBuyText {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+.quickBuyTextLine {
+  margin: 0;
+}
+
+.quickBuyButton {
+  display: block;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #0071ce;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.5em;
+  text-align: center;
+  width: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quickBuyButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.groceriesSection {
+  padding: 10px;
+}
+
+.groceryItem {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.groceryImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.groceryInfo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addButton {
+  padding: 8px;
+  background-color: #0071ce;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height:30px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  margin:40px;
+}
